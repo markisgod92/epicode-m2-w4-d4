@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tiny5", sans-serif;  
+}
+
+#calculator-container {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgrey;
+    background-color: rgb(21, 21, 21);
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(207, 255, 144, 0.41);
+    border: 3px solid rgba(225, 255, 183, 0.41);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+    text-align: end;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    background-color: lightgrey;
+    border: 3px solid rgb(133, 133, 133);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.operator {
+    background-color: orange;
+    border: 3px solid rgb(164, 107, 0);
+}
